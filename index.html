@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Mi Recetario</h1>
+
+        <div>
+            <label for="recipeName">Nombre de la receta:</label>
+        <input type="text" id="recipeName" />
+        <label for="recipeURL">Enlace de la receta:</label>
+        <input type="text" id="recipeURL" />
+        <label for="recipeCategory">Categoria:</label>
+        <select id="recipeCategory">
+            <option value="salado">Salado</option>
+            <option value="dulce">Dulce</option>
+            <option value="snack">Snack</option>
+            <option value="otro">Otro</option>
+        </select>
+        <button onclick="agregarReceta()">Agregar Receta</button>
+        </div>
+
+        <div id="recetas">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
